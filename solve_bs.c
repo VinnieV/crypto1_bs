@@ -67,7 +67,7 @@ void notify_status_offline(int sig){
     printf(VT100_cleareol "Cracking... %6.02f%%", (100.0*total_states_tested/(total_states)));
     alarm(1);
     fflush(stdout);
-    signal(SIGALRM, notify_status_offline);
+    //signal(SIGALRM, notify_status_offline);
 }
 
 int main(int argc, char* argv[]){
@@ -123,7 +123,7 @@ int main(int argc, char* argv[]){
 
     printf("Starting %u threads to test %"llu" (~2^%0.2f) states\n", thread_count, total_states, log(total_states) / log(2));
 
-    signal(SIGALRM, notify_status_offline);
+    //signal(SIGALRM, notify_status_offline);
     alarm(1);
 
     for(i = 0; i < thread_count; i++){
