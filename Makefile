@@ -33,12 +33,12 @@ clean:
 
 get_craptev1:
 	echo 'Stop being lazy, find your own file!'
-	wget http://crapto1.netgarage.org/craptev1-v1.1.tar.xz
+	wget https://web.archive.org/web/20190221140220if_/https://www2.vaneay.fr/mifare/craptev1-v1.1.tar.xz
 	tar Jxvf craptev1-v1.1.tar.xz
 
 get_crapto1:
 	echo 'Stop being lazy, find your own file!'
-	wget http://crapto1.netgarage.org/crapto1-v3.3.tar.xz
+	wget https://web.archive.org/web/20190221140255if_/https://www2.vaneay.fr/mifare/crapto1-v3.3.tar.xz
 	mkdir crapto1-v3.3
 	tar Jxvf crapto1-v3.3.tar.xz -C crapto1-v3.3
 
